@@ -1,0 +1,51 @@
+@keyframes blink {
+    0% {
+      opacity: 1;
+    }
+    10% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+.game-board{
+    margin: 25px;
+    width: 500px;
+    height: 500px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    grid-gap: 25px;
+}
+.game-cell{
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 60px;
+    box-shadow: rgb(149, 157, 165, 0.2) 10px 20px 24px;
+}
+.btnReset{
+    margin-left: 200px;
+    width: 100px;
+    height: 25px;
+    background-color: greenyellow;
+}
+.winner-message{
+    margin-left: 200px;
+    font-size: 40px;
+    color: red;
+    animation: blink 0.5s infinite;
+}
+.is-x{
+    color: blue;
+    box-shadow: rgba(7, 58, 227, 0.2) 10px 20px 24px;
+}
+.is-o{
+    color: red;
+    box-shadow: rgba(203, 8, 8, 0.2) 10px 20px 24px;
+}
+
+
